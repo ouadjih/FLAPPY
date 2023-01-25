@@ -17,13 +17,11 @@ import com.ouadjih.flappy.util.*;
 public class Main implements Runnable{
 	private int w = 1280;
 	private int h = 720;
-	
 	private String title = "Flappy";
 			
 	private boolean running = false;
 	private Thread thread;
-
-
+	
 	public void start() {
 		running = true;
 		thread = new Thread(this, "Display");
@@ -41,11 +39,10 @@ public class Main implements Runnable{
 			Display.setDisplayMode(new DisplayMode(w, h));
 			Display.setTitle(title);
 			ContextAttribs context = new ContextAttribs(3, 3);
-			Display.create(new PixelFormat(),null, context.withProfileCore(true));
-			
+			if(System.getProperty("os.name").contains("Mac")) context = new ContextAttribs(3,2);
+			Display.create(new PixelFormat(), context.withProfileCore(true));
 		}catch(LWJGLException e) {
-			e.printStackTrace();
-			System.out.println("this is create display error");
+			e.printStackTrace();	
 		}
 	
 		init();
