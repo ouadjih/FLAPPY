@@ -1,0 +1,28 @@
+package com.ouadjih.flappy.graphics;
+
+import com.ouadjih.flappy.util.ShaderUtils;
+import static org.lwjgl.opengl.GL20.*;
+import com.ouadjih.flappy.math.Vector3f;
+
+public class Shader {
+	private int ID;
+	
+	public Shader(String vertex, String fragment) {
+		ID = ShaderUtils.load(vertex, fragment);
+	}
+	public static void loadlAll() {
+		
+	}
+	public int getUniform(String name) {
+		return glGetUniformLocation(ID,name);
+	}
+	public void setUniform(String name, Vector3f vector) {
+		glUniform3f(getUniform(name),vector.x,vector.y,vector.z);
+	}
+	public void enable() {
+		glUseProgram(ID);
+	}
+	public void disable() {
+		glUseProgram(0);
+	}
+}

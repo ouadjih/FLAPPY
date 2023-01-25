@@ -13,10 +13,10 @@ import org.lwjgl.opengl.PixelFormat;
 
 import com.ouadjih.flappy.util.*;
 
-import com.ouadjih.flappy.graphics.*;
+
 public class Main implements Runnable{
-	private int width = 1280;
-	private int height = 720;
+	private int w = 1280;
+	private int h = 720;
 	
 	private String title = "Flappy";
 			
@@ -38,10 +38,10 @@ public class Main implements Runnable{
 	}
 	public void run() {
 		try {
-			Display.setDisplayMode(new DisplayMode(width, height));
+			Display.setDisplayMode(new DisplayMode(w, h));
 			Display.setTitle(title);
 			ContextAttribs context = new ContextAttribs(3, 3);
-			Display.create(new PixelFormat(),null, context.withProfileCore(true));
+			Display.create(new PixelFormat(), context.withProfileCore(true));
 			
 		}catch(LWJGLException e) {
 			e.printStackTrace();
@@ -52,9 +52,8 @@ public class Main implements Runnable{
 		int vao = glGenVertexArrays();
 		glBindVertexArray(vao);
 		
-		Shader shader =  new Shader("shaders/shader.vert","shaders/shader.frag");
-		shader.enable();
-		
+		int shader =  ShaderUtils.load("shaders/shader.vert","shaders/shader.frag");
+		glUseProgram(shader);
 		while(running) {
 			render();
 			Display.update();

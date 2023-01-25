@@ -1,0 +1,24 @@
+package com.ouadjih.flappy.graphics;
+
+import com.ouadjih.flappy.util.ShaderUtils;
+import static org.lwjgl.opengl.GL20.*;
+
+public class Shader {
+	private int ID;
+	
+	public Shader(String vertex, String fragment) {
+		ID = ShaderUtils.load(vertex, fragment);
+	}
+	public static void loadlAll() {
+		
+	}
+	public int getUniform(String name) {
+		glGetUniformLocation(ID,name);
+	}
+	public void enable() {
+		glUseProgram(ID);
+	}
+	public void disable() {
+		glUseProgram(0);
+	}
+}

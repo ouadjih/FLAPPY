@@ -13,7 +13,7 @@ import org.lwjgl.opengl.PixelFormat;
 
 import com.ouadjih.flappy.util.*;
 
-import com.ouadjih.flappy.graphics.*;
+
 public class Main implements Runnable{
 	private int width = 1280;
 	private int height = 720;
@@ -41,7 +41,7 @@ public class Main implements Runnable{
 			Display.setDisplayMode(new DisplayMode(width, height));
 			Display.setTitle(title);
 			ContextAttribs context = new ContextAttribs(3, 3);
-			Display.create(new PixelFormat(),null, context.withProfileCore(true));
+			Display.create(new PixelFormat());
 			
 		}catch(LWJGLException e) {
 			e.printStackTrace();
@@ -52,8 +52,8 @@ public class Main implements Runnable{
 		int vao = glGenVertexArrays();
 		glBindVertexArray(vao);
 		
-		Shader shader =  new Shader("shaders/shader.vert","shaders/shader.frag");
-		shader.enable();
+		int shader =  ShaderUtils.load("shaders/shader.vert","shaders/shader.frag");
+		glUseProgram(shader);
 		
 		while(running) {
 			render();
