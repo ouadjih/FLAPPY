@@ -122,3 +122,42 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.jdt 4 0 2023-01-25 16:57:10.427
 !MESSAGE Failed to identify file by its hash using search.maven.org: C:\Users\akram\Desktop\flappybird\lwjgl-2.9.3\jar\lwjgl.jar
+
+!ENTRY org.eclipse.m2e.jdt 4 0 2023-01-25 17:09:07.448
+!MESSAGE Failed to identify file by its hash using search.maven.org: C:\Users\akram\Desktop\flappybird\lwjgl-2.9.3\jar\lwjgl.jar
+
+!ENTRY org.eclipse.jface.text 4 0 2023-01-25 17:37:25.611
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.jdt.internal.codeassist.select.SelectionNodeFound
+	at org.eclipse.jdt.internal.codeassist.select.SelectionOnModuleReference.resolve(SelectionOnModuleReference.java:31)
+	at org.eclipse.jdt.internal.compiler.ast.RequiresStatement.resolve(RequiresStatement.java:51)
+	at org.eclipse.jdt.internal.compiler.ast.ModuleDeclaration.resolveModuleDirectives(ModuleDeclaration.java:153)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.checkAndSetImports(CompilationUnitScope.java:222)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:588)
+	at org.eclipse.jdt.internal.codeassist.impl.Engine.accept(Engine.java:88)
+	at org.eclipse.jdt.internal.compiler.impl.ITypeRequestor.accept(ITypeRequestor.java:61)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:220)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:848)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:474)
+	at org.eclipse.jdt.internal.codeassist.SelectionEngine.select(SelectionEngine.java:1020)
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:167)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:389)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:382)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:121)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:662)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:658)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.m2e.jdt 4 0 2023-01-25 17:44:14.985
+!MESSAGE Failed to identify file by its hash using search.maven.org: C:\Users\akram\Desktop\flappybird\lwjgl-2.9.3\jar\lwjgl.jar
+
+!ENTRY org.eclipse.m2e.jdt 4 0 2023-01-25 17:45:45.802
+!MESSAGE Failed to identify file by its hash using search.maven.org: C:\Users\akram\Desktop\flappybird\lwjgl-2.9.3\jar\lwjgl.jar
+
+!ENTRY org.eclipse.m2e.jdt 4 0 2023-01-25 17:50:52.699
+!MESSAGE Failed to identify file by its hash using search.maven.org: C:\Users\akram\Desktop\flappybird\lwjgl-2.9.3\jar\lwjgl.jar
