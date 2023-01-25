@@ -1,0 +1,19 @@
+package com.ouadjih.flappy;
+
+public class Main {
+	private int height = 720;
+	private int width = 1280;
+	private String title = "Flappy";
+			
+	private boolean running = false;
+	private Thread thread;
+	
+	public void start() {
+		running = true;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
