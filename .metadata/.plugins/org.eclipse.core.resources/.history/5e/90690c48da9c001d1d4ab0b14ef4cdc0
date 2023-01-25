@@ -39,7 +39,7 @@ public class Main implements Runnable{
 		}catch(LWJGLException e) {
 			e.printStackTrace();	
 		}
-	//	int shader = ShaderUtils.load("shader/shader.vert","shader/shader.frag");
+		int shader = ShaderUtils.load("shader/shader.vert","shader/shader.frag");
 		init();
 		
 		while(running) {

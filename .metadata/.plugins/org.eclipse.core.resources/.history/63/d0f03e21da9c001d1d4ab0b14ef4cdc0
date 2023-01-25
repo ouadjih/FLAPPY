@@ -23,11 +23,11 @@ public class ShaderUtils {
 		glCompileShader(vertID);
 		glCompileShader(fragID);
 		
-		if(glGetShaderi(vertID,GL_COMPILE_STATUS )== GL_FALSE) {
+		if(glGetShader(vertID,GL_COMPILE_STATUS )== GL_FALSE) {
 			System.err.println("failed to compile vertex shader");
 			System.err.println(glGetShaderInfoLog(vertID, 2048));
 		}
-		if(glGetShaderi(fragID,GL_COMPILE_STATUS )== GL_FALSE) {
+		if(glGetShader(fragID,GL_COMPILE_STATUS )== GL_FALSE) {
 			System.err.println("failed to compile fragment shader");
 			System.err.println(glGetShaderInfoLog(fragID, 2048));
 		}

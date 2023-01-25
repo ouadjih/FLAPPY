@@ -7,8 +7,6 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.PixelFormat;
 
-import com.ouadjih.flappy.util.ShaderUtils;
-
 public class Main implements Runnable{
 	private int w = 720;
 	private int h = 1280;
@@ -39,7 +37,7 @@ public class Main implements Runnable{
 		}catch(LWJGLException e) {
 			e.printStackTrace();	
 		}
-	//	int shader = ShaderUtils.load("shader/shader.vert","shader/shader.frag");
+		
 		init();
 		
 		while(running) {
