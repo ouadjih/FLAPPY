@@ -1,0 +1,5 @@
+package com.ouadjih.flappy.util;
+
+public class ShaderUtils {
+
+}

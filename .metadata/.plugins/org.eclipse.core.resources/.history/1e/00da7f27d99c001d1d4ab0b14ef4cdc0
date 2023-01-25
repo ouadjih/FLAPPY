@@ -1,6 +1,7 @@
 package com.ouadjih.flappy.util;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 public class FileUtils {
