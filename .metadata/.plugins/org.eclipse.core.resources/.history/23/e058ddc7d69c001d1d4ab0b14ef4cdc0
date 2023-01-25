@@ -71,6 +71,7 @@ public class Matrix4f {
 		result.matrix[0 + 3 * 4] = (right + left) / (left - right);
 		result.matrix[1 + 3 * 4] = (bottom + top) / (bottom - top);
 		result.matrix[2 + 3 * 4] = (far + near) / (far - near);
+
 		
 		return result;
 	}
