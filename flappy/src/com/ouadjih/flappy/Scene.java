@@ -31,7 +31,7 @@ public class Scene extends JPanel{
 	public Tuyau tuyauBas3;
 	
 	public FlappyBird flappybird ;
-	private final int LARGEUR_BANDE_FOND = 700;
+	private final int LARGEUR_BANDE_FOND = 600;
 	private final int DISTANCE_Tuyau = 250;
 	private final int ECART_Tuyau = 120;
 	
