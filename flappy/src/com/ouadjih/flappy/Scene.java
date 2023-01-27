@@ -164,12 +164,12 @@ public class Scene extends JPanel{
 		this.deplacementTuyau(g);
 		this.score();
 		g.setFont(police);
-		g.drawString("" + score, 140, 50);
+		g.drawString("" + score,180, 90);
 		this.finDuJeu = this.collisionFlappy();
 		this.flappybird.setY(this.flappybird.getY() + 1);
 		g.drawImage(this.flappybird.getImgBird(), this.flappybird.getX(), this.flappybird.getY(), null);
 		if(this.finDuJeu == true){
-			g.drawString("Fin du jeu", 60, 200);
+			g.drawString("Fin du jeu",100 ,260);
 		    Audio.playSound("/audio/mg.wav");
 		}
 
