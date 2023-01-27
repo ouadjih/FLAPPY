@@ -2,7 +2,7 @@ package com.ouadjih.flappy;
 
 public class Chrono implements Runnable{
 	
-	private final int Pause = 10;
+	private final int Pause = 3;
 	public void run() {
 		while(true) {
 			Main.scene.xFond--;

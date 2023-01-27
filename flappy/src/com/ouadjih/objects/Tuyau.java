@@ -15,7 +15,7 @@ public class Tuyau {
 	private Image imgTuyau;
 	
 	//CONSTRUCTOR
-	Tuyau(int x, int y, String strImage){
+	public Tuyau(int x, int y, String strImage){
 		this.largeur = 50;
 		this.hauteur = 300;
 		this.x = x;

@@ -12,7 +12,7 @@ public class Main {
 		scene = new Scene();
 		
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		fenetre.setSize(440,550);
+		fenetre.setSize(440,500);
 		fenetre.setLocationRelativeTo(null);
 		fenetre.setResizable(false);
 		fenetre.setAlwaysOnTop(true);
