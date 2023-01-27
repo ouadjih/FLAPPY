@@ -18,9 +18,10 @@ public class Clavier implements KeyListener{
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
 			Main.scene.flappybird.up();
 		}
-		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+		
+		/*if(e.getKeyCode() == KeyEvent.VK_DOWN) {
 			Main.scene.flappybird.down();
-		}
+		}*/
 	}
 
 	@Override

@@ -8,11 +8,11 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		fenetre = new JFrame("Flappy bird");
+		fenetre = new JFrame("Flappy Suii !");
 		scene = new Scene();
 		
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		fenetre.setSize(440,500);
+		fenetre.setSize(400,550);
 		fenetre.setLocationRelativeTo(null);
 		fenetre.setResizable(false);
 		fenetre.setAlwaysOnTop(true);
